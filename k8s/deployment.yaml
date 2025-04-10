@@ -20,3 +20,4 @@ spec:
       imagePullSecrets:
         - name: ghcr-secret  # Das ImagePullSecret, das du vorher erstellt hast #
 # guckt mal wie ihr ein docker imagepull secret erstellt für github
+# yaml ktcl apply -f secret.yaml
