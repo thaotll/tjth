@@ -90,7 +90,7 @@ def build_prompt_with_logs(logs):
         return ""
 
 # Send prompt to Ollama
-async def send_prompt_to_ollama(prompt, model="llama3.2", temperature=1.0):
+async def send_prompt_to_ollama(prompt, model="gemma3:1b", temperature=1.0):
     url = "http://ollama-service:11434/api/generate"
     payload = {
         "model": model,
@@ -141,7 +141,7 @@ async def send_discord_message_async(message):
 # Main entry
 async def main():
     try:
-        await pull_model("llama3.2")
+        await pull_model("gemma3:1b")
         logs = load_trivy_logs()
         if not logs:
             logging.error("No valid logs to process.")
