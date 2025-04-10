@@ -1,4 +1,4 @@
-
+.
 ---
 
 ### **Complete Project: YoBot with Humor, Trivy Analysis, and Deployment**
